@@ -8,7 +8,9 @@ body {
     font-family: "Pathway Gothic One";
     background-color: #f4f4f4;
 }
-
+body.dark-mode {
+    background-color: #1C1C1C;
+}
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -28,10 +30,14 @@ section {
     justify-content: center;
     align-items: center;
 }
+#container.dark-mode {
+    background-color: #363636;
+}
 
 div {
     display: flex;
-    background-color: rgb(28, 36, 134);
+    background: linear-gradient(0.25turn, rgb(28, 36, 134), #9198e5);
+    /* background-color: rgb(28, 36, 134); */
     border-radius: 5px;
     margin: 3px 0;
     padding: 5px;
@@ -39,7 +45,7 @@ div {
 }
 
 div:hover {
-    padding: 7px;
+    transform: scale(1.01, 1.01);
 }
 
 label:hover, input:hover {
@@ -49,10 +55,13 @@ label:hover, input:hover {
 h3 {
     background-color: rgb(102, 69, 221);
     border-radius: 5px;
-    height: 100px;
     font-size: 1.7rem;
     color: #fff;
     text-align: center;
+    padding: 10px 0;
+}
+.dark-mode h1 {
+    color: #fff;
 }
 
 .option {
@@ -82,5 +91,12 @@ button {
 button:hover {
     background-color: #1E90FF;
     cursor: pointer;
-    padding: 7px;
+    transform: scale(1.1, 1.1);
+}
+
+#dark {
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
 }
