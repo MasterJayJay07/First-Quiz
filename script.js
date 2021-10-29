@@ -76,6 +76,8 @@ botaoReset.addEventListener("click", function(){
 
 //modo escuro site
 let botaoDark = document.getElementById("dark")
+let fraseDarkmode = document.getElementById("labelDark")
+fraseDarkmode.innerHTML="modo-escuro"
 
 botaoDark.addEventListener("click", function(){
     let container = document.getElementById("container")
@@ -86,12 +88,16 @@ botaoDark.addEventListener("click", function(){
         container.classList.add("dark-mode")
         h1.classList.add("dark-mode")
         corpo.classList.add("dark-mode")
+        fraseDarkmode.innerHTML="modo-escuro ligado"
+        fraseDarkmode.style.color="#fff"
         return modo
     }
     if(modo===false){
         container.classList.remove("dark-mode")
         h1.classList.remove("dark-mode")
         corpo.classList.remove("dark-mode")
+        fraseDarkmode.innerHTML="modo-escuro desligado"
+        fraseDarkmode.style.color="#1C1C1C"
         return modo
     }
 })
