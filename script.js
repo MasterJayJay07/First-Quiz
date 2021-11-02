@@ -111,26 +111,38 @@ botaoNome.addEventListener("click", function(){
     let nome = inputNome
     let newParagraph = document.createElement("p")
     if(nome==="Nathália" || nome==="Nathalia" || nome==="nathália" || nome==="nathalia"){
-        newParagraph.innerHTML=`${nome}, primeiramente, você a melhor professora de inglês da história mundial, e o tipo que mais combina com você é o :`
+        newParagraph.innerHTML=`${nome}, primeiramente, você à melhor professora de inglês da história mundial, e o tipo que mais combina com você é o :`
         msgDoNome.appendChild(newParagraph)
+        containerResultado.classList.remove("sumir")
+        nameMsg.classList.add("sumir")
+        return nome
     }
     if(nome==="Ingrid" || nome==="ingrid"){
         newParagraph.innerHTML=`${nome}, não sei porque você está aqui, você devia estar ganhando dinheiro, mas já que está aqui, o tipo que mais combina com você é o :`
         msgDoNome.appendChild(newParagraph)
+        containerResultado.classList.remove("sumir")
+        nameMsg.classList.add("sumir")
+        return nome
     }
     if(nome==="Igor" || nome==="igor"){
         newParagraph.innerHTML=`${nome}, lembre-se, esqueça os erros do passado e foque nos erros do futuro, o tipo que mais combina com você é o :`
         msgDoNome.appendChild(newParagraph)
+        containerResultado.classList.remove("sumir")
+        nameMsg.classList.add("sumir")
+        return nome
     }
     if(nome==="André" || nome==="Andre" || nome==="andré" || nome==="andre"){
         newParagraph.innerHTML=`${nome}, bão demais, é os guri, o tipo que mais combina com você é o :`
         msgDoNome.appendChild(newParagraph)
+        containerResultado.classList.remove("sumir")
+        nameMsg.classList.add("sumir")
+        return nome
     }
     else {
         newParagraph.innerHTML=`${nome}, o tipo que mais combina com você é o :`
         msgDoNome.appendChild(newParagraph)
+        containerResultado.classList.remove("sumir")
+        nameMsg.classList.add("sumir")
+        return nome
     }
-    
-    containerResultado.classList.remove("sumir")
-    nameMsg.classList.add("sumir")
 })
