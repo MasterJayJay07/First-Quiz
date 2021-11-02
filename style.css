@@ -117,11 +117,14 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#imagemPokemon {
     width: 300px;
     height: 280px;
+}
+
+#frase, #tituloTipo {
+    background-color: #00000070;  
+    border-radius: 3px;
+    padding: 5px;  
 }
 
 .sumir {
@@ -142,15 +145,27 @@ p {
     color: #fff;
 }
 
+#botaoNome, #escreverNome {
+    margin: 10px 0;
+}
+
+#nameMsg label {
+    background-color: #1C1C1C;
+    color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
 @media (min-width: 425px){
-    #imagemPokemon {
+    #boxImage {
         width: 400px;
         height: 300px;
     }
 }
 @media (min-width: 780px){
-    #imagemPokemon {
-        width: 700px;
-        height: 500px;
+    #boxImage {
+        width: 900px;
+        height: 600px;
     }
 }
